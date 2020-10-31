@@ -1,0 +1,346 @@
+[
+    {
+        "name": "Agadir",
+        "lastPage": 12
+    },
+    {
+        "name": "Ahfir",
+        "lastPage": 1
+    },
+    {
+        "name": "Ajdir",
+        "lastPage": 1
+    },
+    {
+        "name": "Al-Hoceima",
+        "lastPage": 2
+    },
+    {
+        "name": "Asilah",
+        "lastPage": 1
+    },
+    {
+        "name": "Taza",
+        "lastPage": 4
+    },
+    {
+        "name": "Beni Mellal",
+        "lastPage": 6
+    },
+    {
+        "name": "Berkane",
+        "lastPage": 6
+    },
+    {
+        "name": "Berrechid",
+        "lastPage": 5
+    },
+    {
+        "name": "Boujdour",
+        "lastPage": 1
+    },
+    {
+        "name": "Bouskoura",
+        "lastPage": 2
+    },
+    {
+        "name": "Bouznika",
+        "lastPage": 2
+    },
+    {
+        "name": "Casablanca",
+        "lastPage": 50
+    },
+    {
+        "name": "Chefchaouen",
+        "lastPage": 1
+    },
+    {
+        "name": "Chemaia",
+        "lastPage": 1
+    },
+    {
+        "name": "Chichaoua",
+        "lastPage": 1
+    },
+    {
+        "name": "Dakhla",
+        "lastPage": 2
+    },
+    {
+        "name": "Driouch",
+        "lastPage": 1
+    },
+    {
+        "name": "El Hajeb",
+        "lastPage": 2
+    },
+    {
+        "name": "El Jadida",
+        "lastPage": 9
+    },
+    {
+        "name": "El Menzel",
+        "lastPage": 1
+    },
+    {
+        "name": "Erfoud",
+        "lastPage": 1
+    },
+    {
+        "name": "Errachidia",
+        "lastPage": 3
+    },
+    {
+        "name": "Essaouira",
+        "lastPage": 2
+    },
+    {
+        "name": "Fès",
+        "lastPage": 20
+    },
+    {
+        "name": "Fnideq",
+        "lastPage": 1
+    },
+    {
+        "name": "Er-Rich",
+        "lastPage": 1
+    },
+    {
+        "name": "Guelmim",
+        "lastPage": 3
+    },
+    {
+        "name": "Goulmima",
+        "lastPage": 1
+    },
+    {
+        "name": "Guercif",
+        "lastPage": 1
+    },
+    {
+        "name": "Had Kourt",
+        "lastPage": 1
+    },
+    {
+        "name": "Harhoura",
+        "lastPage": 1
+    },
+    {
+        "name": "Ifrane",
+        "lastPage": 1
+    },
+    {
+        "name": "Inezgane",
+        "lastPage": 4
+    },
+    {
+        "name": "Jerada",
+        "lastPage": 1
+    },
+    {
+        "name": "Jorf",
+        "lastPage": 1
+    },
+    {
+        "name": "Kénitra",
+        "lastPage": 12
+    },
+    {
+        "name": "Khémisset",
+        "lastPage": 4
+    },
+    {
+        "name": "Khemis Zemamra",
+        "lastPage": 1
+    },
+    {
+        "name": "Khénifra",
+        "lastPage": 3
+    },
+    {
+        "name": "Khouribga",
+        "lastPage": 7
+    },
+    {
+        "name": "Ksar el-Kébir",
+        "lastPage": 3
+    },
+    {
+        "name": "Laâyoune",
+        "lastPage": 4
+    },
+    {
+        "name": "Lalla Mimouna",
+        "lastPage": 1
+    },
+    {
+        "name": "Larache",
+        "lastPage": 3
+    },
+    {
+        "name": "Marrakech",
+        "lastPage": 20
+    },
+    {
+        "name": "Martil",
+        "lastPage": 2
+    },
+    {
+        "name": "M'diq",
+        "lastPage": 1
+    },
+    {
+        "name": "Mediouna",
+        "lastPage": ""
+    },
+    {
+        "name": "Meknès",
+        "lastPage": ""
+    },
+    {
+        "name": "Midelt",
+        "lastPage": ""
+    },
+    {
+        "name": "Mirleft",
+        "lastPage": ""
+    },
+    {
+        "name": "Mohammédia",
+        "lastPage": ""
+    },
+    {
+        "name": "Moulay Bousselham",
+        "lastPage": ""
+    },
+    {
+        "name": "Moulay Idriss Zerhoun",
+        "lastPage": ""
+    },
+    {
+        "name": "M'rirt",
+        "lastPage": ""
+    },
+    {
+        "name": "Nador",
+        "lastPage": ""
+    },
+    {
+        "name": "Ouarzazate",
+        "lastPage": ""
+    },
+    {
+        "name": "Oualidia",
+        "lastPage": ""
+    },
+    {
+        "name": "Oujda",
+        "lastPage": ""
+    },
+    {
+        "name": "Oulad Amrane",
+        "lastPage": ""
+    },
+    {
+        "name": "Oulad Frej",
+        "lastPage": ""
+    },
+    {
+        "name": "Oulmès",
+        "lastPage": ""
+    },
+    {
+        "name": "Rabat",
+        "lastPage": 16
+    },
+    {
+        "name": "Rommani",
+        "lastPage": ""
+    },
+    {
+        "name": "Rissani",
+        "lastPage": ""
+    },
+    {
+        "name": "Safi",
+        "lastPage": ""
+    },
+    {
+        "name": "Saïdia",
+        "lastPage": ""
+    },
+    {
+        "name": "Salé",
+        "lastPage": ""
+    },
+    {
+        "name": "Sefrou",
+        "lastPage": ""
+    },
+    {
+        "name": "Settat",
+        "lastPage": ""
+    },
+    {
+        "name": "Sidi Slimane",
+        "lastPage": ""
+    },
+    {
+        "name": "Tanger",
+        "lastPage": ""
+    },
+    {
+        "name": "Tan-Tan",
+        "lastPage": ""
+    },
+    {
+        "name": "Tamesna",
+        "lastPage": ""
+    },
+    {
+        "name": "Taounate",
+        "lastPage": ""
+    },
+    {
+        "name": "Tarfaya",
+        "lastPage": ""
+    },
+    {
+        "name": "Tata",
+        "lastPage": ""
+    },
+    {
+        "name": "Taza",
+        "lastPage": ""
+    },
+    {
+        "name": "Temara",
+        "lastPage": ""
+    },
+    {
+        "name": "Tétouan",
+        "lastPage": ""
+    },
+    {
+        "name": "Tiflet",
+        "lastPage": ""
+    },
+    {
+        "name": "Tinghir",
+        "lastPage": ""
+    },
+    {
+        "name": "Tiznit",
+        "lastPage": ""
+    },
+    {
+        "name": "Youssoufia",
+        "lastPage": ""
+    },
+    {
+        "name": "Zagora",
+        "lastPage": ""
+    }
+]
