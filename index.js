@@ -1,10 +1,9 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 const fs = require("fs");
-//let firstPage = 1;
-//const lastPage = 16;
-//const URL = `https://www.telecontact.ma/trouver/index.php?nxo=moteur&nxs=process&string=Pharmacies&ou=Rabat&ou_ville=&trouver=&page=${firstPage}&quartier=&rubrique_name=&rubrique_affiner=609240;609250&region=&m_ru_n=&activ=&produit=`;
-//let all = [];
+const cities = require('./City.json');
+const slug = require('./slug');
+const sorted = require('./sorted');
 
 async function getPharmacies(URL, city) {
   console.log(city)
@@ -29,7 +28,7 @@ async function getPharmacies(URL, city) {
     pharmacy.phone = $(elem).text().trim();
     phones.push(pharmacy);
   });
-let results = [];
+  let results = [];
   $("article a").each(function (i, elem) {
       results.push($(elem).attr('href'));
     });
@@ -39,18 +38,20 @@ let results = [];
         location: `https://www.telecontact.ma${locations[i]}`
       }
     }
-
   for (let i = 0; i < pharmacies.length; i++) {
     pharmacies[i] = {
-      ...pharmacies[i],
+      name: pharmacies[i].name.replace('   ', ''),
       ...addreses[i],
       ...phones[i],
-      ...locations[i],
+      location: locations[i] === undefined ? "" : slug(pharmacies[i].name) === slug(locations[i].location.split('/')[4]) ? locations[i].location : "",
       city,
     };
   }
   return pharmacies;
 }
+//const URL = 'https://www.telecontact.ma/trouver/index.php?nxo=moteur&nxs=process&string=Pharmacies&ou=Beni+Mellal&aproximite=&produit=';
+
+//getPharmacies(URL, 'Beni Mellal')
 
 function removeDuplicateObjectFromArray(arr, keyProps) {
   return Object.values(
@@ -62,28 +63,20 @@ function removeDuplicateObjectFromArray(arr, keyProps) {
   );
 }
 
-//getPharmaciesAtRabat();
-let objects = [
-  {
-    name: "Mirleft",
-    lastPage: 1,
-  }, 
-  // {
-  //   name: "Rabat",
-  //   lastPage: 16,
-  // }
-]
 async function getPharmaciesByCity() {
-  for(let item of objects){
+  let cities = JSON.parse(fs.readFileSync('./City.json')); 
+  cities = sorted(cities);
+  for(let item of cities){
     let all = [];
     for(let i = 1; i <= item.lastPage; i++) {
       let URL = `https://www.telecontact.ma/trouver/index.php?nxo=moteur&nxs=process&string=Pharmacies&ou=${item.name}&ou_ville=&trouver=&page=${i}&quartier=&rubrique_name=&rubrique_affiner=609240;609250&region=&m_ru_n=&activ=&produit=`;
         const result = await getPharmacies(URL, item.name);
         all.push(...result);
-        //console.log(item.name)
+        console.log(item.name)
     }
+      all = removeDuplicateObjectFromArray(all, ['name'])
      let data = JSON.stringify(all);
-     fs.writeFileSync(`${item.name}.json`, data);
+     fs.writeFileSync(`./resources/${item.name}.json`, data);
   }
 }
 
